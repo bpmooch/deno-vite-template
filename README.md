@@ -1,11 +1,16 @@
 # Vite + Deno + React + TypeScript
 
+Created using `deno run -RWE npm:create-vite-extra@latest`, choosing
+`deno-react` and `Typescript + SWC`.
+
 - installed tailwind using https://tailwindcss.com/docs/installation/using-vite
 
 ## tailwind install notes
 
+swc complained about "nodeModulesDir" not being set to "auto" and
+`--allow-scripts` not being used to install the dependencies
+
 ```
-# --allow-scripts is required for swc usage
 deno install --allow-scripts npm:tailwindcss npm:@tailwindcss/vite
 ```
 
